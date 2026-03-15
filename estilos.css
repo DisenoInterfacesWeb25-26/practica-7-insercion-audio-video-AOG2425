@@ -1,0 +1,19 @@
+/*fondo para navbar, carousel y texto de carousel*/
+ .navbar-custom {
+    background-color: #00838f; /* color teal */
+  }
+ 
+ /*fondo hero*/
+.fondo-hero {
+  background-color: #e8f4f8; /* el color que quieras */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+    margin: 16px;
+}
+/*mismo color footer y boton*/
+ .footer-teal, .btn-teal {
+    background-color: #00838f; /* color teal */
+    color: white;
+  }
+ 
+

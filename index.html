@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejemplo de página con Bootstrap, incluyendo un carrusel, tarjetas y un pie de página.">
+    <meta name="author" content="AOG2526"> 
+    <title>Página con bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+ 
+<!--contenedor para aplicar fondo-->
+<div class="fondo-hero">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+    <div class="container">
+        <!--logo-->
+        <a class="navbar-brand" href="#">
+            <img src="https://www.eniun.com/wp-content/uploads/ENIUN@2x.png" alt="Logo ENIUN" width="100">
+        </a>
+
+        <!--menu hamburguesa para movil/tablet-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!--dropdown-->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">SEO</a></li><li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Desarrollo Web</a></li><li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Marketing online</a></li>
+            </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="tabla.html">Tabla</a></li>
+            <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Disabled</a></li>
+        </ul>
+        <!--buscador-->
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search"/>
+            <button class="btn btn-teal btn-outline-success" type="submit">Buscar</button>
+        </form>
+        </div>
+    </div>
+</nav>
+
+<!--CARROUSEL-->
+ <!--mt-4 margintop. mb-4 marginbottom-->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="https://www.eniun.com/wp-content/uploads/ENIUNCreatividadSeo.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="https://www.eniun.com/wp-content/uploads/ENIUNCreatividadDiseno.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="https://www.eniun.com/wp-content/uploads/ENIUNCreatividadSocialNetwork.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    <!--controles carousel-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    <!--texto del carousel-->
+        <div class="container m-4">
+            <h1>Hello, World!</h1>
+            <p class="lead">  This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr>
+            <p>It uses utility classes for typography and spacing to suit the larger container.</p>
+            <a href="#" class="btn btn-primary btn-lg">Learn more</a>
+        </div> 
+    </div>
+</div>  
+<br><br>
+
+<!--CARDS-->
+<div class="container mb-4">
+    <h2 class="text-center">Artículos</h2><br>
+ <div class="row">
+    <div class="col-lg-4 col-md-6 mb-3 "> <!--en escritorio 3 col por fila. En tablet 2 col por fila. mb-3 margen inferior-->
+        <div class="card h-100" >
+            <video controls class="w-100">
+                <source src="videos/videoFuegos.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.    
+            </video>
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Video con formato .mp4</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <audio controls class="w-100">
+                    <source src="audios/audio1.mp3" type="audio/mp3">
+                    <source src="audios/audio1.ogg" type="audio/ogg">
+                    Tu navegador no soporta la reproducción de audio.
+                </audio>
+        </div>
+    </div>
+        <div class="col-lg-4 col-md-6 mb-3 ">
+        <div class="card h-100" >
+            <video controls class="w-100">
+                 <source src="videos/videoFuegos.webm" type="video/webm">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+            <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Video con formato .webm</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <audio controls class="w-100">
+                <source src="audios/audio2.ogg" type="audio/ogg">
+                <source src="audios/audio2.mp3" type="audio/mp3">
+                Tu navegador no soporta la reproducción de audio.</audio>
+        </div>
+    </div>
+     <div class="col-lg-4 col-md-6 mb-3 ">
+        <div class="card h-100">
+            <video controls class="w-100">
+                <source src="videos/videoFuegos.ogg" type="video/ogg">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+            <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Video con formato .ogg no reproduce</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>      
+ </div> 
+</div>
+
+ 
+<!-- FOOTER --> 
+<footer class="footer-teal m-4 p-4"> <!--teal es el color. m-margin y p de padding-->
+    <div>
+        <div class="row justify-content-between"> 
+            <div class="col-6 text-start">Eniun.com</div> 
+            <div class="col-6 text-end">Política de privacidad y cookies</div> 
+        </div> 
+    </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

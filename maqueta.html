@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="AOG2526">
+    <meta name="description" content="Maqueta básica utilizando Bootstrap 5">
+    <title>Maqueta con Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="maqueta.css">
+    
+</head>
+<body>
+
+<div class="container">
+  <!-- header -->
+  <div class="row">
+    <div class="col header tamanio">Header</div>
+  </div>
+
+  <!-- central -->
+  <div class="row">
+    <!-- sidebar (visible en md y lg) en movil-sm desaparece-->
+    <div class="col-lg-2 col-md-3 d-none d-md-block sidebar">Sidebar</div> <!--SIN BOX-->
+
+    <!-- contiene todo -->
+    <div class=" col-md-9 col-lg-10">
+      <div class="row">
+        <div class="col main tamanio">Main</div>
+      </div>
+
+      <!-- cuadros rosas -->
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 bloques tamanio">Bloque 1</div>
+        <div class="col-lg-3 col-md-6 col-sm-6 bloques tamanio">Bloque 2</div>
+        <div class="col-lg-3 col-md-6 col-sm-6 bloques tamanio">Bloque 3</div>
+        <div class="col-lg-3 col-md-6 col-sm-6 bloques tamanio">Bloque 4</div>
+      </div>
+
+      <!-- cuadros verdes -->
+      <div class="row">
+        <div class="col-lg-6 col-md-12 inferior tamanio">Bloque inferior 1</div>
+        <div class="col-lg-6 col-md-12 inferior tamanio">Bloque inferior 2</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="row">
+    <div class="col footer tamanio">Footer</div>
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+        margin: 20px;
+}
+
+.header { 
+        background-color: #c8ccf3; 
+        border: 1px solid #3b3f7f;
+       
+}
+.main { 
+        background-color: #fffacd; 
+        border: 1px solid #d4c81e;
+        
+}
+.sidebar { 
+        background-color: #419b41; 
+        border: 1px solid #154215;
+        
+}
+
+.bloques { 
+        background-color: #ffb6c1; 
+        border: 1px solid #e67db1;
+        
+}
+.inferior { 
+        background-color: #98fb98; 
+        border: 1px solid #54c754;
+}
+.footer { 
+        background-color: #00bfff; 
+        border: 1px solid #0077aa;
+}
+/* estilo comun para todos los cuadros */
+.tamanio { 
+        height: 100px; 
+        text-align: center; 
+      
+}

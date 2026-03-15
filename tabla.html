@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<br><br>
+<!--cabecera principal-->
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+    <div class="container">
+        <!--logo-->
+        <a class="navbar-brand" href="#">
+            <img src="https://www.eniun.com/wp-content/uploads/ENIUN@2x.png" alt="Logo ENIUN" width="100">
+        </a>
+
+        <!--buscador-->
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search"/>
+            <button class="btn btn-teal btn-outline-success" type="submit">Buscar</button>
+        </form>
+        
+        </div>
+    </div>
+</nav>
+ <!--breadcrumb-->
+<div class="container">
+        <nav aria-label="breadcrumb">
+        <ol class="breadcrumb m-4">
+            <li class="breadcrumb-item" aria-current="page"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Tabla</li>
+        </ol>
+    </nav>
+</div>
+
+<!--tabla-->
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead class="table table-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Usuario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-primary">
+                    <th scope="row">1</th>
+                    <td>Otto</td>
+                    <td>Simón</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr class="table-secondary">
+                    <th scope="row">2</th>
+                    <td>Luis</td>
+                    <td>Fernández</td>
+                    <td>@fas-ls</td>
+                </tr>
+                <tr class="table-success">
+                    <th scope="row">3</th>
+                    <td>Juana</td>
+                    <td>David</td>
+                    <td>@jdv</td>
+                </tr>
+                <tr class="table-danger">
+                    <th scope="row">4</th>
+                    <td>Liss</td>
+                    <td>Pérez</td>
+                    <td>@pliss</td>
+                </tr>
+                <tr class="table-light">
+                    <th scope="row">5</th>
+                    <td>María</td>
+                    <td>Garcia</td>
+                    <td>@mgarcia</td>
+                </tr>
+            </tbody>
+        </table>    
+    </div>
+</div>
+
+<!--footer -->
+<footer class="footer-teal m-4 p-4"> <!--teal es el color. m-margin y p de padding-->
+    <div>
+        <div class="row justify-content-between"> 
+            <div class="col-6 text-start">Eniun.com</div> 
+            <div class="col-6 text-end">Política de privacidad y cookies</div> 
+        </div> 
+    </div>
+</footer>
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

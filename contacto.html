@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto con bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <br><br>
+<!--cabcera principal-->
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+    <div class="container">
+        <!--logo-->
+        <a class="navbar-brand" href="#">
+            <img src="https://www.eniun.com/wp-content/uploads/ENIUN@2x.png" alt="Logo ENIUN" width="100">
+        </a>
+
+        <!--buscador-->
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search"/>
+            <button class="btn btn-teal btn-outline-success" type="submit">Buscar</button>
+        </form>
+        
+        </div>
+    </div>
+</nav>
+ <!--breadcrumb-->
+<div class="container">
+        <nav aria-label="breadcrumb">
+        <ol class="breadcrumb m-4">
+            <li class="breadcrumb-item" aria-current="page"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+        </ol>
+    </nav>
+</div>
+
+<!--formulario de contacto-->
+<div class="container">
+    <div class="fondo-hero p-4">
+        <h1 class="mb-3">Formulario de contacto</h1>
+        <p class="mb-4">Completa el siguiente formulario para contactarnos</p>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre: </label>
+            <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre....">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico:</label>
+            <input type="email" class="form-control" id="email" placeholder="correo@correo.com">
+        </div>
+        <div class="mb-3">
+            <label for="consulta" class="form-label">Consulta:</label>
+            <textarea class="form-control" id="consulta" rows="4" placeholder="Escribe aquí tu consulta... "></textarea>
+        </div>
+        <div class="mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">Aceptar términos y condiciones.</label>
+            <div class="invalid-feedback">
+                Debe aceptar las condiciones antes de enviar el formulario.
+            </div>
+        </div>
+        <button type="submit" class="btn btn-teal btn-outline-success">Enviar</button>
+    </div>
+</div>
+<!--paginación -->
+<br><br>
+<div class="container">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link"><span aria-hidden="true">&laquo;</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#"> <span aria-hidden="true">&raquo;</span></a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!--footer -->
+<footer class="footer-teal m-4 p-4"> <!--teal es el color. m-margin y p de padding-->
+    <div>
+        <div class="row justify-content-between"> 
+            <div class="col-6 text-start">Eniun.com</div> 
+            <div class="col-6 text-end">Política de privacidad y cookies</div> 
+        </div> 
+    </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>
